@@ -3,6 +3,7 @@ body {
     flex-direction:column;
     background-color: antiquewhite;
     align-items: center;
+    margin: 0;
 }
 
 header {
@@ -12,9 +13,27 @@ header {
     padding: 1rem;
 }
 
+#profile-container {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(160deg, rgb(231, 168, 231) 60%, antiquewhite 40%);
+    width: 100%;
+    padding: 2rem;
+}
+
 #ollie-profile-pic {
-    width: 60vw;
+    width: 40vw;
     height: auto;
+
+}
+
+#profile-pic-name {
+    position: absolute;
+    top: 7em;
+    left: 5em;
+    font-size:3rem;
+    color: white;
+
 }
 
 header p {
@@ -29,7 +48,7 @@ h1 {
 main {
     display: flex;
     flex-direction:column;
-    background-color: white;
+    background-color: antiquewhite;
     align-items: center;
     width: 100%;
     padding: 1rem;
@@ -49,6 +68,7 @@ main {
     gap: 1px;
     border: 1px solid black;
     padding: 1rem;
+    background-color: white;
 }
 
 .card-top {
@@ -58,12 +78,21 @@ main {
     color: white;
     font-size:2rem;
    
-    
     background-color: purple;
     height: 10rem;
     width: 100%;
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
+    align-items: center;
+    background-color: rgb(231, 168, 231);
+    width: 100%;
+}
+
+#ollie-exit-pic {
+    width: 60vw;
+    height: auto;
 }
