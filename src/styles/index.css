@@ -21,9 +21,52 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
     margin-bottom: 2rem;
 }
+
+
+#profile-container {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    background: linear-gradient(160deg, rgb(231, 168, 231) 60%, antiquewhite 40%);
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+
+
+#profile-pic-container {
+    
+    width: 70%;
+    height: 400px;
+    background-image: url('../assets/ollie1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+
+#profile-pic-container span {
+    position: relative;
+    font-size:3rem;
+    color: white;
+    top: 14rem;
+    text-align: left;
+}
+
+
+
+header p {
+    padding: 1rem;
+    max-width: 90%;
+    margin: 0;
+}
+
 
 .social-medium {
     display: flex;
@@ -36,37 +79,6 @@ header {
     width: 2rem;
     height: auto;
 
-}
-
-#profile-container {
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(160deg, rgb(231, 168, 231) 60%, antiquewhite 40%);
-    width: 80% ;
-    padding: 2rem;
-}
-
-
-#profile-pic-container {
-    width: 90%;
-    height: 400px;
-    background-image: url('../assets/ollie1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#profile-pic-container span {
-    position: relative;
-    font-size:3rem;
-    color: white;
-    top: 12rem;
-    text-align: left;
-}
-
-header p {
-    padding: 1rem;
-    margin: 0;
 }
 
 h1 {
@@ -88,7 +100,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 5rem;
+    row-gap: 5rem;
 }
 
 .project-card {
@@ -97,7 +109,7 @@ main {
     align-items: center;
     border: none;
     box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
-    max-width: 20rem;   /* allows flexbox wrap to adjust columns */
+    max-width: 15rem;   /* allows flexbox wrap to adjust columns */
     background-color: white;
 }
 
@@ -157,6 +169,7 @@ footer {
     width: 100%;
     height: auto;
     object-fit:cover;
+
 }
 
 #contact-info {
@@ -184,4 +197,19 @@ footer {
     width: 4rem;
     height: auto;
     
+}
+
+@media (min-width:600px) {
+    header p {
+        max-width: 70%;
+    }
+    main {
+        width: 90%;
+    }   
+    #container-projects {
+        gap: 2rem;
+    }      
+    .project-card {
+        max-width: 16rem;
+    }
 }
