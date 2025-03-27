@@ -29,19 +29,22 @@ header {
 
 
 #profile-container {
+    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     box-sizing: border-box;
     background: linear-gradient(160deg, rgb(231, 168, 231) 60%, antiquewhite 40%);
     width: 100%;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
     
 }
 
 
-#profile-pic-container {
-    
+/* #profile-pic-container {
+    position: relative;
     width: 70%;
     height: 400px;
     background-image: url('../assets/ollie1.jpg');
@@ -49,14 +52,21 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     padding: 1rem;
+} */
+
+#ollie-profile-pic {
+    width: 80%;
+    height: auto;
+    object-fit:cover;
 }
 
-#profile-pic-container span {
-    position: relative;
+
+#profile-container span {
+    position: absolute;
     font-size:3rem;
     color: white;
-    top: 14rem;
-    text-align: left;
+    bottom: 1rem;
+    width: 70%;
 }
 
 
