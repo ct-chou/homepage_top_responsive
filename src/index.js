@@ -1,7 +1,7 @@
 import './styles/index.css'
 import openNewSvg from './assets/open-in-new.svg'
 
-const projectColors = ['purple', 'skyblue', 'orange', 'green', 'red', 'blue', 'yellow', 'pink', 'black', 'white']
+const projectColors = ['purple', 'skyblue', 'orange', 'seagreen', 'red', 'blue', 'yellow', 'pink', 'black', 'white']
 const projects = document.getElementById('container-projects');
 
 const totalProjects = 6;

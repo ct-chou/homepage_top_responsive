@@ -4,8 +4,9 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100%;
+    width: 100%;    
     font-family: 'Playfair Display', 'Roboto', sans-serif;
+    font-size: clamp(8px, 5vw, 20px);
 }
 
 body {
@@ -21,6 +22,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 .social-medium {
@@ -58,8 +60,8 @@ header {
     position: relative;
     font-size:3rem;
     color: white;
-    top: 19rem;
-    margin-left: 1rem;
+    top: 12rem;
+    text-align: left;
 }
 
 header p {
@@ -76,25 +78,26 @@ main {
     flex-direction:column;
     background-color: antiquewhite;
     align-items: center;
-    width: 90%;
+    flex-wrap: wrap;
+    width: 80%;
     gap: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 5rem;
 }
 
 #container-projects {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5rem;
 }
 
 .project-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1px;
-    border: 1px solid black;
-    padding: 1rem;
+    border: none;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+    max-width: 20rem;   /* allows flexbox wrap to adjust columns */
     background-color: white;
 }
 
@@ -105,14 +108,17 @@ main {
     color: white;
     font-size:2rem;
     /* background-color: sky  */
-    height: 10rem;
-    width: 100%;
+    height: 15rem;
+    width: 100%-1rem;
+    padding-left: 1rem;
 }
 
 .card-bottom-header {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .card-social {
@@ -130,6 +136,13 @@ main {
     height: 1rem;
 }
 
+.card-bottom p {
+    width: 100% -2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
 footer {
     display: flex;
     flex-direction: column;
@@ -137,30 +150,38 @@ footer {
     align-items: center;
     background-color: rgb(231, 168, 231);
     width: 100%;
-    padding-top: 1rem;
+    padding-top: 3rem;
 }
 
 #ollie-exit-pic {
     width: 100%;
     height: auto;
+    object-fit:cover;
 }
 
 #contact-info {
     padding: 1rem;
 }
 
+#contact-info p {
+    font-size: normal;
+}
+
+
 #contact-info p:first-child {
     font-size: larger;
 }
+
 
 .social-largest {
     display: flex;
     width: 10rem;
     justify-content: space-around;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .social-largest img {
     width: 4rem;
     height: auto;
+    
 }
