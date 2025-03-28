@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
-/*
 html, body {
     margin: 0;
     padding: 0;
@@ -46,13 +45,11 @@ header {
     
 }
 
-
 #ollie-profile-pic {
     width: 80%;
     height: auto;
     object-fit:cover;
 }
-
 
 #about-panel span {
     position: absolute;
@@ -69,7 +66,6 @@ header {
     font-size: 1.5rem;
 }
 
-*/
 
 .social-medium {
     display: flex;
@@ -231,14 +227,12 @@ footer {
         width: 100%;
         height: auto;
         object-fit:cover;
-        /* float: inline-start; */
     }
     #profile-pic-holder {
         float: left;
         width: 60%;
         height: calc(60vw *1.3 - 14rem);
         background: none;
-        /* background-color: lightgray;  */
     }
     #profile-pic-holder span {
         position: absolute;
@@ -248,17 +242,23 @@ footer {
         right: -15rem;
         min-width: 400px;
     }
-    #about {
+    #about-title {
         margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
     }
     .social-medium {
-        margin-top: 2rem;
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        gap: 2rem;
+        top: 3.5rem;
+        /* left: calc(50vw - 10rem); */
+        /* transform: translateX(-150%);  */
     }
 
     #profile-text {
         font-size: 1rem;
-        padding: 2rem;
+        padding: 1rem 2rem 0rem 2rem;
     }
     #my-work {
         align-self: flex-start;
@@ -282,66 +282,63 @@ footer {
     body {
         display: flex;
         flex-direction:column;
+        
         background-color: antiquewhite;
         align-items: center;
         margin: 0;
     }
     header {
+        position: relative;
+        background: linear-gradient(160deg, rgb(231, 168, 231) 60%, antiquewhite 40%);
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 2rem auto;
+        padding: 2rem auto;
         width: 100%;
     }
     #about-panel {
-        position: relative;
-        display: flex;
+        flex-direction: row;
+        align-items: normal;
         background: white;
-        border: 1 solid black;
         width: 90%;
+        max-width: 1100px;
         box-sizing: border-box;
-        gap: 2rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
+        gap: 1rem;
     }      
     #ollie-profile-pic {
-        position: absolute;
-        top: -1.5rem;
-        left: 0rem;
-        width: 40%;
-        height: auto;
-        object-fit:cover;
-        /* float: inline-start; */
+        width: 100%;
+        scale: 1.2;
+        box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
     }
     #profile-pic-holder {
+        position: static;
+        flex: 0.5;
+        padding:0;
+        margin: 0;
         background: none;
-        flex: 1;
-        /* background-color: lightgray;  */
+
     }
     #profile-pic-holder span {
-        position: absolute;
-        font-size:3rem;
-        color: white;
-        top: 18rem;
-        min-width: 400px;
+        bottom: 0rem;
+        left: 0rem;
     }
-    #about {
-        position: absolute;
-        top: 1rem;
-        right: 18rem;
+    .profile-bio-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background: white;
+        box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+    }
+    #profile-text {
+        font-size: 1rem;
+        padding: 0rem 2rem 1rem 2.5rem;
     }
     .social-medium {
-        /* display: none; */
-        position: absolute;
-        top: 21rem;
-        right: 4rem;
+        align-self:flex-end;
+        padding: 0 1rem 1rem 0;
+        margin: 0;
     }
-
-    #profile-text {
-        position: relative;
-        left: 2rem;
-        flex: 2;
-        font-size: 1rem;
-        padding: 3rem 2rem;
-    }
-       
 }
