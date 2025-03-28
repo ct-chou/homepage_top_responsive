@@ -47,17 +47,6 @@ header {
 }
 
 
-/* #profile-pic-container {
-    position: relative;
-    width: 70%;
-    height: 400px;
-    background-image: url('../assets/ollie1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 1rem;
-} */
-
 #ollie-profile-pic {
     width: 80%;
     height: auto;
