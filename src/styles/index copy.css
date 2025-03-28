@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
-/*
 html, body {
     margin: 0;
     padding: 0;
@@ -9,22 +8,22 @@ html, body {
     font-family: 'Playfair Display', 'Roboto', sans-serif;
     font-size: clamp(8px, 5vw, 20px);
 }
-
+/* 
 body {
     display: flex;
     flex-direction:column;
     background-color: antiquewhite;
     align-items: center;
     margin: 0;
-}
-
+} */
+/* 
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     width: 100%;
-}
+} */
 
 #about-panel {
     display: flex;
@@ -37,6 +36,7 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
     box-sizing: border-box;
     background: linear-gradient(160deg, rgb(231, 168, 231) 60%, antiquewhite 40%);
@@ -62,14 +62,20 @@ header {
     width: 70%;
 }
 
+#profile-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+}
+
 #profile-text {
     padding: 1rem;
     max-width: 90%;
     margin: 0;
     font-size: 1.5rem;
 }
-
-*/
 
 .social-medium {
     display: flex;
@@ -84,7 +90,6 @@ header {
 
 }
 
-
 h1 {
     margin: 0;
 }
@@ -98,6 +103,7 @@ main {
     width: 80%;
     gap: 1rem;
     margin: 5rem auto;
+    /* margin-bottom: 5rem; */
 }
 
 #container-projects {
@@ -123,6 +129,7 @@ main {
     justify-content: center;
     color: white;
     font-size:2rem;
+    /* background-color: sky  */
     height: 15rem;
     width: 100%-1rem;
     padding-left: 1rem;
@@ -202,8 +209,7 @@ footer {
     
 }
 
-@media (min-width:600px) and (max-width: 1020px) {
-    
+@media (min-width:600px) and (max-width: 1000px) {
     main {
         margin: 2rem auto;
         width: 90%;
@@ -240,6 +246,7 @@ footer {
         background: none;
         /* background-color: lightgray;  */
     }
+    
     #profile-pic-holder span {
         position: absolute;
         font-size:3rem;
@@ -253,6 +260,7 @@ footer {
         margin-bottom: 2rem;
     }
     .social-medium {
+        display: none;
         margin-top: 2rem;
     }
 
@@ -269,79 +277,76 @@ footer {
     }
 }
 
-@media (min-width:1021px) {
-    html, body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        width: 100%;    
-        font-family: 'Playfair Display', 'Roboto', sans-serif;
-        font-size: clamp(8px, 5vw, 20px);
-    }
-    
+@media (min-width:1001px) {
     body {
-        display: flex;
-        flex-direction:column;
-        background-color: antiquewhite;
-        align-items: center;
-        margin: 0;
-    }
-    header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: white;
+        margin: 0;
+    }
+    main {
         margin: 2rem auto;
-        width: 100%;
+        width: 90%;
+    }
+    header {
+        background: linear-gradient(160deg, rgb(231, 168, 231) 60%, antiquewhite 40%);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        /* background: white; */
+        /* padding: 0rem;
+        padding-top: 8rem; */
+        width: 80%;
     }
     #about-panel {
         position: relative;
-        display: flex;
-        background: white;
+        background: rgb(193, 138, 138);
         border: 1 solid black;
-        width: 90%;
+        width: 80%;
         box-sizing: border-box;
-        gap: 2rem;
-        margin-top: 2rem;
+        display: inline-block;
     }      
     #ollie-profile-pic {
-        position: absolute;
-        top: -1.5rem;
-        left: 0rem;
-        width: 40%;
+        /* position: absolute; */
+        width: 100%;
         height: auto;
         object-fit:cover;
-        /* float: inline-start; */
     }
     #profile-pic-holder {
+        display: block;
         background: none;
-        flex: 1;
-        /* background-color: lightgray;  */
+        width: 30%;
+        padding-top:2rem;
+        margin-bottom: 0;       
+        float: left;
     }
-    #profile-pic-holder span {
-        position: absolute;
-        font-size:3rem;
-        color: white;
-        top: 18rem;
-        min-width: 400px;
-    }
+    #about-panel span {
+        position: relative;
+    }   
+
     #about {
-        position: absolute;
-        top: 1rem;
-        right: 18rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
     .social-medium {
-        /* display: none; */
-        position: absolute;
-        top: 21rem;
-        right: 4rem;
+        margin-top: 2rem;
+        justify-self: flex-end;
     }
 
     #profile-text {
-        position: relative;
-        left: 2rem;
-        flex: 2;
-        font-size: 1rem;
-        padding: 3rem 2rem;
+        font-size: 0.8rem;
     }
-       
+    #my-work {
+        align-self: flex-start;
+    }   
+    
+    .project-card {
+        max-width: 16rem;
+    }
 }
