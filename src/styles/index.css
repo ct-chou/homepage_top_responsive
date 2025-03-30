@@ -59,6 +59,14 @@ header {
     width: 70%;
 }
 
+.profile-bio-container {
+    padding: 1rem;
+}
+
+#about-title {
+    padding-left: 1rem;
+}
+
 #profile-text {
     padding: 1rem;
     max-width: 90%;
@@ -161,7 +169,13 @@ footer {
     align-items: center;
     background-color: rgb(231, 168, 231);
     width: 100%;
-    padding-top: 3rem;
+}
+footer h1 {
+    padding-left: 1rem;
+}
+
+.contact-container {
+    padding: 2rem;
 }
 
 #ollie-exit-pic {
@@ -267,6 +281,14 @@ footer {
     .project-card {
         max-width: 16rem;
     }
+    
+    .social-largest {
+        margin-bottom: 2rem;
+    }
+    #contact-info {
+        padding-top: 0rem;
+    }
+
 }
 
 @media (min-width:1021px) {
@@ -360,10 +382,13 @@ footer {
     }
     .contact-container {
         padding: 2rem;
+        width: 50%;
+        margin-left: 2rem;
     }
     #ollie-exit-pic {
         width: auto;
-        height: 80vh;
+        height: 70vh;
+        margin-right:2rem;
     }
     .social-largest {
         margin-bottom: 0rem;
